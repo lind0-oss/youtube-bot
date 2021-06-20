@@ -23,13 +23,13 @@ sleep(tempodeespera)
 
 def bot(link):
     verificador = 'https://'
-    views = 0
+    #views = 0
     if verificador not in link:
         print("Isto não é um link =(")
         sleep(5)
         sys.exit()
     else:
-        while views < nviews:
+        for i in range(nviews):
             pyautogui.sleep(1)
             webbrowser.open_new_tab(linkOne)
             pyautogui.sleep(1)
