@@ -44,6 +44,12 @@ def bot(link):
             #pyautogui.sleep(tamanho_do_video2)
             #pyautogui.sleep(1)
             #pyautogui.hotkeys("ctrl", "w")
+            views = views + 1
+        else:
+            sleep(1)
+            print("Fim do script!")
+            sleep(5)
+            sys.exit()
 #fim da função bot
 bot(linkOne)
 sleep(1)
