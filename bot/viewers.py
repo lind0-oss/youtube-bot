@@ -20,16 +20,16 @@ tempodeespera = int(input("quantos segundos para inicializar\n >  "))
 #vou testar se funciona
 sleep(tempodeespera)
 
-bot(linkOne)
 
 def bot(link):
     verificador = 'https://'
+    views = 0
     if verificador not in link:
         print("Isto não é um link =(")
         sleep(5)
         sys.exit()
     else:
-        while 0 < nviews:
+        while views < nviews:
             pyautogui.sleep(1)
             webbrowser.open_new_tab(linkOne)
             pyautogui.sleep(1)
@@ -44,6 +44,9 @@ def bot(link):
             #pyautogui.sleep(tamanho_do_video2)
             #pyautogui.sleep(1)
             #pyautogui.hotkeys("ctrl", "w")
+#fim da função bot
+bot(linkOne)
+sleep(1)
 print("Fim do script!")
 sleep(5)
 sys.exit()
