@@ -29,27 +29,26 @@ def bot(link):
         sleep(5)
         sys.exit()
     else:
-        for i in range(nviews):
-            pyautogui.sleep(1)
-            webbrowser.open_new_tab(linkOne)
-            pyautogui.sleep(1)
-            pyautogui.press('space')
-            pyautogui.sleep(tamanho_do_video)
-            pyautogui.sleep(1)
-            pyautogui.hotkeys("ctrl", "w")
-            pyautogui.sleep(10)
+        if nviews > 1:
+            for i in range(nviews):
+                pyautogui.sleep(1)
+                webbrowser.open_new_tab(linkOne)
+                pyautogui.sleep(1)
+                pyautogui.press('space')
+                pyautogui.sleep(tamanho_do_video)
+                pyautogui.sleep(1)
+                pyautogui.hotkeys("ctrl", "w")
+                pyautogui.sleep(10)
+        else:
+            print("O número de views é menor ou igual a 1.")
+            sleep(5)
+            sys.exit()
             #webbrowser.open_new_tab(linkTwp)
             #pyautogui.sleep(1)
             #pyautogui.press("space")
             #pyautogui.sleep(tamanho_do_video2)
             #pyautogui.sleep(1)
             #pyautogui.hotkeys("ctrl", "w")
-            views = views + 1
-        else:
-            sleep(1)
-            print("Fim do script!")
-            sleep(5)
-            sys.exit()
 #fim da função bot
 bot(linkOne)
 sleep(1)
