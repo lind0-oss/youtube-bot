@@ -7,19 +7,14 @@ import webbrowser
 
 linkOne = input("Primeiro link\n >  ")
 #linkTwp = input("Segundo link\n >  ")
-
 nviews = int(input("Quantas views deseja?\n >  "))
 
 tamanho_do_video = int(input("Tamanho do vídeo\n >  "))
-
 #tamanho_do_video2 = int(input("Tamanho do vídeo\n >  "))
-
 # tempo de espera personalizado
 tempodeespera = int(input("quantos segundos para inicializar\n >  "))
-
 #vou testar se funciona
 sleep(tempodeespera)
-
 
 def bot(link):
     verificador = 'https://'
@@ -37,8 +32,10 @@ def bot(link):
                 pyautogui.press('space')
                 pyautogui.sleep(tamanho_do_video)
                 pyautogui.sleep(1)
-                pyautogui.hotkeys("ctrl", "w")
+                pyautogui.hotkey("ctrl", "w")
                 pyautogui.sleep(10)
+                print(f'Número de views atual: {i}')
+            print("M>1")
         else:
             print("O número de views é menor ou igual a 1.")
             sleep(5)
