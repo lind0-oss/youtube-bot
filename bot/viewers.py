@@ -8,7 +8,6 @@ import webbrowser
 linkOne = input("Primeiro link\n >  ")
 #linkTwp = input("Segundo link\n >  ")
 nviews = int(input("Quantas views deseja?\n >  "))
-
 tamanho_do_video = int(input("Tamanho do vídeo\n >  "))
 #tamanho_do_video2 = int(input("Tamanho do vídeo\n >  "))
 # tempo de espera personalizado
