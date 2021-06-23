@@ -23,8 +23,8 @@ def bot(link):
         print("Isto não é um link =(")
         print('Porém será pesquisado =)')
         #nr = int(input("Quantos resultados deseja?\n >  "))
-        webbrowser.open_new_tab(link)
-        for resultado in search('"{link}" google', stop=200):
+        #webbrowser.open_new_tab(link)
+        for resultado in search('"{link}" google', stop=150):
             print(f'Resultado: {resultado}')
         sleep(5)
         dsd = input("Deseja sair? (y/n)\n >  ")
