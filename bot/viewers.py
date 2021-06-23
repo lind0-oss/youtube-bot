@@ -1,3 +1,4 @@
+from googlesearch import search
 import pyautogui
 from time import sleep
 #from random import choice, shuffle
@@ -20,8 +21,22 @@ def bot(link):
     #views = 0
     if verificador not in link:
         print("Isto não é um link =(")
+        print('Porém será pesquisado =)')
+        webbrowser.open_new_tab(link)
+        for resultado in search('"{link}" google', stop=150):
+            print(f'Resultado: {resultado}')
         sleep(5)
-        sys.exit()
+        dsd = input("Deseja sair? (y/n)\n >  ")
+        if dsd == 'y':
+            sys.exit()
+        elif dsd == 'n':
+            print('Você será desligado em 10000000 segundos')
+            sleep(10000000)
+            sys.exit()
+        else:
+            print('Comando inválido =(')
+            sleep(5)
+            sys.exit()
     else:
         if nviews > 1:
             for i in range(nviews):
