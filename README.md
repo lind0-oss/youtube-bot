@@ -1,2 +1,2 @@
 # youtube-bot
- bot de inscritos e views no youtube
+ bot de views no youtube
